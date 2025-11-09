@@ -12,7 +12,7 @@
 </br>
 
 
-
+Hexadecimal is a [positional numeral system](https://en.wikipedia.org/wiki/Numeral_system#Positional_systems_in_detail) for representing a numeric value as [base](https://en.wikipedia.org/wiki/Radix) 16. For the most common convention, a digit is represented as "0" to "9" like for [decimal](https://en.wikipedia.org/wiki/Decimal) and as a letter of the alphabet from "A" to "F" (either upper or lower case) for the digits with decimal value 10 to 15.
 
 
 
