@@ -24,6 +24,8 @@ Special notation is often used to indicate that a number is hex. In [mathematics
 
 </br>
 
+Import/Export Picture Formats : BMP, PNG, JPG, GIF
+
 
 
 
