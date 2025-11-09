@@ -26,6 +26,20 @@ Special notation is often used to indicate that a number is hex. In [mathematics
 
 Import/Export Picture Formats : BMP, PNG, JPG, GIF
 
+### Common convention:
+Typically, a hex representation convention allows either lower or upper case letters and treats the letter the same regardless of its case.
+
+Often when rendering non-textual data, a value stored in memory is displayed as a sequence of hex digits with spaces that between values. For instance, in the following [hex dump](https://en.wikipedia.org/wiki/Hex_dump), each 8-bit byte is a 2-digit hex number, with spaces between them, while the 32-bit offset at the start is an 8-digit hex number.
+
+```pascal
+00000000  57 69 6B 69 70 65 64 69  61 2C 20 74 68 65 20 66 
+00000010  72 65 65 20 65 6E 63 79  63 6C 6F 70 65 64 69 61 
+00000020  20 74 68 61 74 20 61 6E  79 6F 6E 65 20 63 61 6E
+00000030  20 65 64 69 74 2C 20 69  6E 63 6C 75 64 69 6E 67
+00000040  20 79 6F 75 20 28 61 6E  64 20 6D 65 29 21
+```
+</br>
+
 ### Convert Examples:
 ```pascal
 procedure Hex2Png(str: string; out png: TPngObject);
