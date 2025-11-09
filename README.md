@@ -16,7 +16,13 @@ Hexadecimal is a [positional numeral system](https://en.wikipedia.org/wiki/Numer
 
 As typical computer hardware is [binary](https://en.wikipedia.org/wiki/Binary_number) in nature and that hex is [power of 2](https://en.wikipedia.org/wiki/Power_of_two), the hex representation is often used in computing as a dense representation of binary information. A hex digit represents 4 contiguous [bits](https://en.wikipedia.org/wiki/Bit) – known as a nibble. An 8-bit byte is two hex digits, such as 2C.
 
+Special notation is often used to indicate that a number is hex. In [mathematics](https://en.wikipedia.org/wiki/Mathematics), a subscript is typically used to specify the base. For example, the decimal value 491 would be expressed in hex as 1EB16. In computer programming, various notations are used. In C and many related languages, the prefix 0x is used. For example, 0x1EB.
 
+</br>
+
+![Picture HEX](https://github.com/user-attachments/assets/2f2acfe0-3b6a-4825-9675-cdb393a7ed44)
+
+</br>
 
 
 
