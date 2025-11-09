@@ -84,11 +84,18 @@ begin
    stream.Free;
 end;
 ```
+</br>
 
+# XOR cipher:
+In [cryptography](https://en.wikipedia.org/wiki/Cryptography), the simple XOR cipher is a type of additive cipher,[1] an encryption algorithm that operates according to the principles:
 
-
-
-
+```pascal
+A ⊕ 0 = A,
+A ⊕ A = 0,
+A ⊕ B = B ⊕ A,
+(A ⊕ B) ⊕ C = A ⊕ (B ⊕ C),
+(B ⊕ A) ⊕ A = B ⊕ 0 = B
+```
 
 
 
