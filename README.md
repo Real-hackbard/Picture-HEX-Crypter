@@ -26,7 +26,50 @@ Special notation is often used to indicate that a number is hex. In [mathematics
 
 Import/Export Picture Formats : BMP, PNG, JPG, GIF
 
+### Convert Examples:
+```pascal
+procedure Hex2Png(str: string; out png: TPngObject);
+var  stream: TMemoryStream;
+begin
+  if not Assigned(png) then png := TPngObject.Create;
+  stream := TMemoryStream.Create;
+  stream.SetSize(Length(str) div 2);
+  HexToBin(PChar(str), stream.Memory, stream.Size);
+  png.LoadFromStream(stream);
+  stream.Free;
+end;
 
+function Png2Hex(png: TPngObject): string;
+var  stream: TMemoryStream;
+begin
+  stream := TMemoryStream.Create;
+  png.SaveToStream(stream);
+  SetLength(Result, stream.Size * 2);
+  BinToHex(stream.Memory, PChar(Result), stream.Size);
+  stream.Free;
+end;
+
+function bmp2Hex(out bmp: TBitmap):string;
+var  stream: TMemoryStream;
+begin
+  stream := TMemoryStream.Create;
+  bmp.SaveToStream(stream);
+  SetLength(Result, stream.Size * 2);
+  BinToHex(stream.Memory, PChar(Result), stream.Size);
+  stream.Free;
+end;
+
+procedure Hex2bmp(str: string; out bmp: TBitmap);
+var  stream: TMemoryStream;
+begin
+   if not Assigned(bmp) then bmp := TBitmap.Create;
+   stream := TMemoryStream.Create;
+   stream.SetSize(Length(str) div 2);
+   HexToBin(PChar(str), stream.Memory, stream.Size);
+   bmp.LoadFromStream(stream);
+   stream.Free;
+end;
+```
 
 
 
