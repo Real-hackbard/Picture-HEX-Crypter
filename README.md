@@ -100,7 +100,18 @@ A ⊕ B = B ⊕ A,
 
 For example where ⊕ denotes the [exclusive](https://en.wikipedia.org/wiki/Exclusive_disjunction) disjunction (XOR) operation. This operation is sometimes called modulus 2 addition (or subtraction, which is identical). With this logic, a string of text can be encrypted by applying the bitwise XOR operator to every character using a given key. To decrypt the output, merely reapplying the XOR function with the key will remove the cipher.
 
+The string "Wiki" (01010111 01101001 01101011 01101001 in 8-bit ASCII) can be encrypted with the repeating key 11110011 as follows:
 
+```pascal
+01010111 01101001 01101011 01101001
+⊕	11110011 11110011 11110011 11110011
+=	10100100 10011010 10011000 10011010
+And conversely, for decryption:
+
+10100100 10011010 10011000 10011010
+⊕	11110011 11110011 11110011 11110011
+=	01010111 01101001 01101011 01101001
+```
 
 
 
