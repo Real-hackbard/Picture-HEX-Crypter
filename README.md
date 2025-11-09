@@ -14,7 +14,7 @@
 
 Hexadecimal is a [positional numeral system](https://en.wikipedia.org/wiki/Numeral_system#Positional_systems_in_detail) for representing a numeric value as [base](https://en.wikipedia.org/wiki/Radix) 16. For the most common convention, a digit is represented as "0" to "9" like for [decimal](https://en.wikipedia.org/wiki/Decimal) and as a letter of the alphabet from "A" to "F" (either upper or lower case) for the digits with decimal value 10 to 15.
 
-
+As typical computer hardware is [binary](https://en.wikipedia.org/wiki/Binary_number) in nature and that hex is [power of 2](https://en.wikipedia.org/wiki/Power_of_two), the hex representation is often used in computing as a dense representation of binary information. A hex digit represents 4 contiguous [bits](https://en.wikipedia.org/wiki/Bit) – known as a nibble. An 8-bit byte is two hex digits, such as 2C.
 
 
 
