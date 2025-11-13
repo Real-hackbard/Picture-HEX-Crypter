@@ -87,7 +87,7 @@ end;
 </br>
 
 # XOR cipher:
-In [cryptography](https://en.wikipedia.org/wiki/Cryptography), the simple XOR cipher is a type of additive cipher,[1] an encryption algorithm that operates according to the principles:
+In [cryptography](https://en.wikipedia.org/wiki/Cryptography), the simple XOR cipher is a type of additive cipher, an encryption algorithm that operates according to the principles:
 
 ```pascal
 A ⊕ 0 = A,
